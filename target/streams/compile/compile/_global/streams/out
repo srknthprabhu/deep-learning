@@ -1,0 +1,13 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/srikanthprabhu/Downloads/scala-project/build.scala:1:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mname := "ScalaSparkExample"[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/srikanthprabhu/Downloads/scala-project/build.scala:3:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mversion := "1.0"[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/srikanthprabhu/Downloads/scala-project/build.scala:5:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mscalaVersion := "2.12.10"[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/srikanthprabhu/Downloads/scala-project/build.scala:7:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mlibraryDependencies += "org.apache.spark" %% "spark-sql" % "3.1.1"[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m

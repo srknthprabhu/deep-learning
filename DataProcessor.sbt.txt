@@ -1,0 +1,25 @@
+object DataProcessor {
+  def main(args: Array[String]): Unit = {
+    // Create Spark Session
+    val spark = SparkSession.builder()
+      .appName("Data Processing Example")
+      .master("local[*]") // Use local mode for running locally
+      .getOrCreate()
+
+    // Read CSV file
+    val inputPath = "path/to/your/input.csv"
+    val data = spark.read.option("header", "true").csv(inputPath)
+
+    // Perform transformation - for example, grouping by a "category" column and calculating average "value"
+    val transformedData = data
+      .groupBy("category")
+      .agg(F.avg("value").as("average_value"))
+
+    // Write transformed data to a new CSV file
+    val outputPath = "path/to/your/output.csv"
+    transformedData.write.option("header", "true").csv(outputPath)
+
+    // Stop Spark Session
+    spark.stop()
+  }
+}"""
